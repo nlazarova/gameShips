@@ -1,0 +1,22 @@
+table, td {
+    border: 1px solid black;
+    background: blue;    
+}
+table {
+    border-collapse: collapse;
+    border-width:10px;
+    border-color: grey;
+}
+td{
+  height: 50px;
+  width: 50px;
+  border-style: solid; 
+  border-width:2px;
+  border-color: grey;
+}
+.ship {
+  background: url('../img/ship.png') no-repeat center center;
+}
+.water{
+  background: #2ec3fa;
+}
