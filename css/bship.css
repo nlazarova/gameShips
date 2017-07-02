@@ -15,7 +15,9 @@ td{
   border-color: grey;
 }
 .ship {
-  background: url('../img/ship.png') no-repeat center center;
+  background: #2ec3fa;
+  /*background: url('../img/ship.png') no-repeat center center;*/
+  /*display:none;*/
 }
 .water{
   background: #2ec3fa;
