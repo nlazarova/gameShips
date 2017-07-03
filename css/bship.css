@@ -3,9 +3,11 @@ table, td {
     background: blue;    
 }
 table {
+    width: 350px;
     border-collapse: collapse;
     border-width:10px;
     border-color: grey;
+    display:none;
 }
 td{
   height: 50px;
