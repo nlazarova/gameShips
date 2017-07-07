@@ -35,58 +35,58 @@
         <td id="06">X</td> 
       </tr>
       <tr>
-        <td id="10"></td>
-        <td id="11"></td>
-        <td id="12"></td>
-        <td id="13"></td>
-        <td id="14"></td>
-        <td id="15"></td>
-        <td id="16"></td> 
+        <td id="10">X</td>
+        <td id="11">X</td>
+        <td id="12">X</td>
+        <td id="13">X</td>
+        <td id="14">X</td>
+        <td id="15">X</td>
+        <td id="16">X</td> 
       </tr>
       <tr>
-        <td id="20">cell 20</td>
-        <td id="21">cell 21</td>
-        <td id="22">cell 22</td>
-        <td id="23">cell 23</td>
-        <td id="24">cell 24</td>
-        <td id="25">cell 25</td>
-        <td id="26">cell 26</td> 
+        <td id="20">X</td>
+        <td id="21">X</td>
+        <td id="22">X</td>
+        <td id="23">X</td>
+        <td id="24">X</td>
+        <td id="25">X</td>
+        <td id="26">X</td> 
       </tr>
       <tr>
-        <td id="30">cell 30</td>
-        <td id="31">cell 31</td>
-        <td id="32">cell 32</td>
-        <td id="33">cell 33</td>
-        <td id="34">cell 34</td>
-        <td id="35">cell 35</td>
-        <td id="36">cell 36</td> 
+        <td id="30">X</td>
+        <td id="31">X</td>
+        <td id="32">X</td>
+        <td id="33">X</td>
+        <td id="34">X</td>
+        <td id="35">X</td>
+        <td id="36">X</td> 
       </tr>
       <tr>
-        <td id="40">cell 40</td>
-        <td id="41">cell 41</td>
-        <td id="42">cell 42</td>
-        <td id="43">cell 43</td>
-        <td id="44">cell 44</td>
-        <td id="45">cell 45</td>
-        <td id="46">cell 46</td> 
+        <td id="40">X</td>
+        <td id="41">X</td>
+        <td id="42">X</td>
+        <td id="43">X</td>
+        <td id="44">X</td>
+        <td id="45">X</td>
+        <td id="46">X</td> 
       </tr>
       <tr>
-        <td id="50">cell 50</td>
-        <td id="51">cell 51</td>
-        <td id="52">cell 52</td>
-        <td id="53">cell 53</td>
-        <td id="54">cell 54</td>
-        <td id="55">cell 55</td>
-        <td id="56">cell 56</td> 
+        <td id="50">X</td>
+        <td id="51">X</td>
+        <td id="52">X</td>
+        <td id="53">X</td>
+        <td id="54">X</td>
+        <td id="55">X</td>
+        <td id="56">X</td> 
       </tr>
       <tr>
-        <td id="60">cell 60</td>
-        <td id="61">cell 61</td>
-        <td id="62">cell 62</td>
-        <td id="63">cell 63</td>
-        <td id="64">cell 64</td>
-        <td id="65">cell 65</td>
-        <td id="66">cell 66</td> 
+        <td id="60">X</td>
+        <td id="61">X</td>
+        <td id="62">X</td>
+        <td id="63">X</td>
+        <td id="64">X</td>
+        <td id="65">X</td>
+        <td id="66">X</td> 
       </tr>
     </table>
 </div>
@@ -172,7 +172,7 @@ $(document).ready(function(){
           // $(this).show();    
         }else if (numberHitShip<3) {
             var color = $(this).css('background-color');
-            if (color != '#cccccc') {
+            if (color != '#0ba2e3') {
            // if (($(this).css("background-color"))!= "#cccccc") {
                 notHit = notHit+1;
              }   else {
@@ -180,7 +180,8 @@ $(document).ready(function(){
              }
             //============} else { //за 
            //$(this).css("background-color", '#cccccc');
-           $(this).css({"background-color": '#cccccc', "color": "red"});
+           //смяна на сивия '#cccccc' със син цвят '#0ba2e3'
+           $(this).css({"background-color": '#0ba2e3', "color": "red"});
            var thisHotHitId=$(this).attr('id');
            var resRowNot = thisHotHitId.substr(0, 1);
            var resColNot = thisHotHitId.substr(1, 1);

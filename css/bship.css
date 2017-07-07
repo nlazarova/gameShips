@@ -50,14 +50,14 @@ td{
   border-color: grey;
 }
 .ship {
-  background: #2ec3fa;
+  background: #16a5e3;
   color: transparent;
   /*background: url('../img/ship.png') no-repeat center center;*/
   /*display:none;*/
 }
 .water{
-  background: #2ec3fa;
-  color: #2ec3fa;
+  background: #16a5e3;
+  color: #16a5e3;
 }
 #first, #second{
   max-width: 1680px;  
