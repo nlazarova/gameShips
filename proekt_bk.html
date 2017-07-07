@@ -26,13 +26,13 @@
 <p id="notship"></p>
     <table id="myTable">
       <tr>
-        <td id="00"></td>
-        <td id="01"></td>
-        <td id="02"></td>
-        <td id="03"></td>
-        <td id="04"></td>
-        <td id="05"></td>
-        <td id="06"></td> 
+        <td id="00">X</td>
+        <td id="01">X</td>
+        <td id="02">X</td>
+        <td id="03">X</td>
+        <td id="04">X</td>
+        <td id="05">X</td>
+        <td id="06">X</td> 
       </tr>
       <tr>
         <td id="10"></td>
@@ -179,7 +179,8 @@ $(document).ready(function(){
                 notHit = notHit;
              }
             //============} else { //за 
-           $(this).css("background-color", '#cccccc');
+           //$(this).css("background-color", '#cccccc');
+           $(this).css({"background-color": '#cccccc', "color": "red"});
            var thisHotHitId=$(this).attr('id');
            var resRowNot = thisHotHitId.substr(0, 1);
            var resColNot = thisHotHitId.substr(1, 1);
