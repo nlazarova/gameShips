@@ -64,11 +64,11 @@ td{
 }
 #first{  
   /*background: blue;*/
-  background: url('gameship11.png') no-repeat center center;
+  background: url('../img/gameship11.png') no-repeat center center;
 }
 #second{  
   /*background: blue;*/
-  background: url('gameship22.png') no-repeat center center;
+  background: url('../img/gameship22.png') no-repeat center center;
   display:none;
 }
 
