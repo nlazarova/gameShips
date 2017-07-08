@@ -14,7 +14,7 @@
 <div id="description">
 <p class="text1">Пирати искат да нападнат остров Папая. Тяхната флотилия се състой от три кораба. За да спасиш островитяните, ти трябва да обезвредиш корабите, като ги откриеш.</p>
 <button id="start">Start</button>
-<button id="refresh">Refresh</button>
+
 </div>
 
 
@@ -24,6 +24,7 @@
 <h2>Игра</h2>
 <h1>ПИРАТСКИ КОРАБИ</h1>
 <p id="notship"></p>
+ 
     <table id="myTable">
       <tr>
         <td id="00">X</td>
@@ -89,6 +90,8 @@
         <td id="66">X</td> 
       </tr>
     </table>
+    <button id="refresh">Refresh</button>
+
 </div>
 
 
@@ -98,7 +101,7 @@
  var shipArr=[];
 
 $(document).ready(function(){
-
+    
     var h2=$("h2");
     h2.animate({left: '100px'}, "slow");
     h2.animate({fontSize: '2em'}, "slow");
@@ -106,6 +109,7 @@ $(document).ready(function(){
     h1.animate({left: '100px'}, "slow");
     h1.animate({fontSize: '3em'}, "slow");
     $("#start").click(function(){
+     
         $("#first").hide(1000);//скриване на всичко от div с id=first
 
         $("#second").fadeIn(3000);
@@ -223,20 +227,16 @@ $(document).ready(function(){
         }
 
 
-    });
+    });//===End======= Край на функцията, която сменя цвета на клетката от синьо в сиво при избор на тази клетка, ако не е кораб, ако е кораб се показва той
 
 
-});
+});  //End "#start" click(function()
      
-
-//==========
-
-//========== сменя цвета на клетката от синьо в сиво при избор на тази клетка
-/*
-$("td").click(function(){  
-        $(this).css("background-color", "#cccccc");
-    });
-*/
+    $("#refresh").click(function(){
+        //jQuery("body").load(window.location.href);
+        location.reload();
+    });  //End "#refresh" click(function()
+     
 //==========
 
 

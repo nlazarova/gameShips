@@ -13,15 +13,11 @@ p, div, button, h1, h2, h3, h4{
 p, div, button, h4{
   font-size: 2rem; 
 }
-h1{
-  font-size: 2rem; 
-}
+
 h2{
-  font-size: 2rem; 
+  padding-top: 15px; 
 }
-h3{
-  font-size: 2rem; 
-}
+
 td{
   font-size: 3rem; 
 }
@@ -90,9 +86,15 @@ td{
   font-family: "Comic Sans MS", "Comic Sans", cursive; */
 }
 #start, #refresh{
-  width: 100px;
-  height: 35px;
-  margin: 10px;
+  width: 130px;
+  height: 60px;
+  margin: 28px;
+  border-radius: 26px;
+  background: #83e7ff;
+}
+#refresh{
+  float: right;
+  margin-right: 431px;
 }
 #notship{
   float: left;
