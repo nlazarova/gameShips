@@ -48,7 +48,12 @@ td{
   border-style: solid; 
   border-width:2px;
   border-color: grey;
+  
 }
+#myTable{
+  caret-color: grey;
+}
+
 .ship {
   background: #16a5e3;
   color: transparent;

@@ -16,7 +16,7 @@ $(document).ready(function(){
     h1.animate({left: '100px'}, "slow");
     h1.animate({fontSize: '3em'}, "slow");
     $("#start").click(function(){        
-        document.getElementById("myTable").style.cursor = "crosshair";
+        document.getElementById("myTable").style.cursor = "pointer";
         $("#cloud").fadeIn(3000);
         $("#cloud").animate({left: '+850px'}, 100000, function(){});
 
