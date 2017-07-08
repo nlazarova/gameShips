@@ -13,6 +13,10 @@ p, div, button, h1, h2, h3, h4{
 p, div, button, h4{
   font-size: 2rem; 
 }
+h1,h2{
+  position: sticky;
+  z-index: 70;
+}
 
 h2{
   padding-top: 15px; 
@@ -65,6 +69,7 @@ td{
 #first{  
   /*background: blue;*/
   background: url('../img/gameship11.png') no-repeat center center;
+  z-index: -10;
 }
 #second{  
   /*background: blue;*/
@@ -80,6 +85,8 @@ td{
   padding: 35px;
   margin-left: 555px;
   margin-top: 50px;
+  position: sticky;
+  z-index: 70;
 }
 .text1{
   /*font-size:14px;
@@ -100,4 +107,36 @@ td{
   float: left;
   margin-left: 95rem;
   margin-top: 5rem;
+}
+
+#cloud{
+  position: absolute;
+  top: 10px;
+  left: 330px;
+  z-index: 5;
+  display:none;
+}
+#shipanimatebig, #shipanimatemiddle, #shipanimatemin{
+  position: absolute;  
+  z-index: 5;  
+}
+#shipanimatebig{  
+  top: 230px;
+  left: 900px;  
+}
+#shipanimatemiddle{  
+  top: 220px;
+  left: 1250px;  
+}
+#shipanimatemin{  
+  top: 200px;
+  left: 1200px;  
+}
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

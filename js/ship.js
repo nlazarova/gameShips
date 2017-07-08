@@ -1,17 +1,26 @@
 var shipArr=[];
 
 $(document).ready(function(){
-    
+    for (var i = 0; i < 100; i++) {          
+      $("#shipanimatebig").animate({left: '905px', top:'225px', opacity: 0.95}, 1000, function(){});
+      $("#shipanimatebig").animate({left: '900px', top:'230px', opacity: 0.95}, 1000, function(){});
+      $("#shipanimatemiddle").animate({left: '1253px', top:'221px', opacity: 0.85}, 1000, function(){});
+      $("#shipanimatemiddle").animate({left: '1250px', top:'220px', opacity: 0.85}, 1000, function(){});
+      $("#shipanimatemin").animate({left: '1201px', top:'201px', opacity: 0.75}, 1000, function(){});
+      $("#shipanimatemin").animate({left: '1200px', top:'200px', opacity: 0.75}, 1000, function(){});
+    }
     var h2=$("h2");
     h2.animate({left: '100px'}, "slow");
     h2.animate({fontSize: '2em'}, "slow");
     var h1=$("h1");
     h1.animate({left: '100px'}, "slow");
     h1.animate({fontSize: '3em'}, "slow");
-    $("#start").click(function(){
-     
-        $("#first").hide(1000);//скриване на всичко от div с id=first
+    $("#start").click(function(){        
+        document.getElementById("myTable").style.cursor = "crosshair";
+        $("#cloud").fadeIn(3000);
+        $("#cloud").animate({left: '+850px'}, 100000, function(){});
 
+        $("#first").hide(1000);//скриване на всичко от div с id=first
         $("#second").fadeIn(3000);
         $("#myTable").fadeIn(3000);
         $("td").addClass("water");//на всички <td> се присвоява клас water
