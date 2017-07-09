@@ -28,8 +28,7 @@ td{
 
 
 table, td {
-    border: 1px solid black;
-    /*background: blue;  */  
+    border: 1px solid black;   
 }
 table {
     width: 350px;
@@ -56,9 +55,7 @@ td{
 
 .ship {
   background: #16a5e3;
-  color: transparent;
-  /*background: url('../img/ship.png') no-repeat center center;*/
-  /*display:none;*/
+  color: transparent;  
 }
 .water{
   background: #16a5e3;
@@ -68,16 +65,13 @@ td{
   max-width: 1680px;  
   height: 980px;  
   color: rgb(136, 107, 34);
-  text-align: center;
-  /*background: blue;*/ 
+  text-align: center; 
 }
-#first{  
-  /*background: blue;*/
+#first{   
   background: url('../img/gameship11.png') no-repeat center center;
   z-index: -10;
 }
-#second{  
-  /*background: blue;*/
+#second{    
   background: url('../img/gameship22.png') no-repeat center center;
   display:none;
 }
@@ -93,10 +87,7 @@ td{
   position: sticky;
   z-index: 70;
 }
-.text1{
-  /*font-size:14px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive; */
-}
+
 #start, #refresh{
   width: 130px;
   height: 60px;
@@ -106,7 +97,7 @@ td{
 }
 #refresh{
   float: right;
-  margin-right: 460px;
+  margin-right: 425px;
 }
 #notship{
   float: left;
@@ -137,6 +128,7 @@ td{
   top: 200px;
   left: 1200px;  
 }
+/*So that the text is not marked*/
 body{
     -webkit-touch-callout: none;
     -webkit-user-select: none;

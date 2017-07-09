@@ -1,110 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/bship.css">
-<style>
 
-</style>
 </head>
 <body>
-<img id="cloud" src="img/cloud.png" alt="cloud">
-<div id="first">
-<h2>Игра</h2>
-<h1>ПИРАТСКИ КОРАБИ</h1>
-<h4>тип морски шах</h4>
-<img id="shipanimatebig" src="img/shipbig.png" alt="shipbig">
-<img id="shipanimatemiddle" src="img/shipmiddle.png" alt="shipmiddle">
-<img id="shipanimatemin" src="img/shipmin.png" alt="shipmin">
-<div id="description">
-<p class="text1">Пирати искат да нападнат остров Папая. Тяхната флотилия се състой от три кораба. За да спасиш островитяните, ти трябва да обезвредиш корабите, като ги откриеш.</p>
-<button id="start">Start</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</div>
+    <script type="text/javascript" src="js/ship.js"></script>
+    <img id="cloud" src="img/cloud.png" alt="cloud">
+    <!-- First page  -->
+    <div id="first">
+        <h2>Игра</h2>
+        <h1>ПИРАТСКИ КОРАБИ</h1>
+        <h4>тип морски шах</h4>
+        <img id="shipanimatebig" src="img/shipbig.png" alt="shipbig">
+        <img id="shipanimatemiddle" src="img/shipmiddle.png" alt="shipmiddle">
+        <img id="shipanimatemin" src="img/shipmin.png" alt="shipmin">
+        <div id="description">
+            <p class="text1">Пирати искат да нападнат остров Папая. Тяхната флотилия се състой от три кораба. За да спасиш островитяните, ти трябва да обезвредиш корабите, като ги откриеш.</p>
+            <button id="start">Start</button>
+        </div>
 
+    </div>
+    <!-- Second page  -->
+    <div id="second">
+      <h2>Игра</h2>
+      <h1>ПИРАТСКИ КОРАБИ</h1>
+      <p id="notship"></p>
+       
+          <table id="myTable">
+            <tr>
+              <td id="00">X</td>
+              <td id="01">X</td>
+              <td id="02">X</td>
+              <td id="03">X</td>
+              <td id="04">X</td>
+              <td id="05">X</td>
+              <td id="06">X</td> 
+            </tr>
+            <tr>
+              <td id="10">X</td>
+              <td id="11">X</td>
+              <td id="12">X</td>
+              <td id="13">X</td>
+              <td id="14">X</td>
+              <td id="15">X</td>
+              <td id="16">X</td> 
+            </tr>
+            <tr>
+              <td id="20">X</td>
+              <td id="21">X</td>
+              <td id="22">X</td>
+              <td id="23">X</td>
+              <td id="24">X</td>
+              <td id="25">X</td>
+              <td id="26">X</td> 
+            </tr>
+            <tr>
+              <td id="30">X</td>
+              <td id="31">X</td>
+              <td id="32">X</td>
+              <td id="33">X</td>
+              <td id="34">X</td>
+              <td id="35">X</td>
+              <td id="36">X</td> 
+            </tr>
+            <tr>
+              <td id="40">X</td>
+              <td id="41">X</td>
+              <td id="42">X</td>
+              <td id="43">X</td>
+              <td id="44">X</td>
+              <td id="45">X</td>
+              <td id="46">X</td> 
+            </tr>
+            <tr>
+              <td id="50">X</td>
+              <td id="51">X</td>
+              <td id="52">X</td>
+              <td id="53">X</td>
+              <td id="54">X</td>
+              <td id="55">X</td>
+              <td id="56">X</td> 
+            </tr>
+            <tr>
+              <td id="60">X</td>
+              <td id="61">X</td>
+              <td id="62">X</td>
+              <td id="63">X</td>
+              <td id="64">X</td>
+              <td id="65">X</td>
+              <td id="66">X</td> 
+            </tr>
+          </table>
+          <button id="refresh">Refresh</button>
 
-
-</div>
-<div id="second">
-<h2>Игра</h2>
-<h1>ПИРАТСКИ КОРАБИ</h1>
-<p id="notship"></p>
- 
-    <table id="myTable">
-      <tr>
-        <td id="00">X</td>
-        <td id="01">X</td>
-        <td id="02">X</td>
-        <td id="03">X</td>
-        <td id="04">X</td>
-        <td id="05">X</td>
-        <td id="06">X</td> 
-      </tr>
-      <tr>
-        <td id="10">X</td>
-        <td id="11">X</td>
-        <td id="12">X</td>
-        <td id="13">X</td>
-        <td id="14">X</td>
-        <td id="15">X</td>
-        <td id="16">X</td> 
-      </tr>
-      <tr>
-        <td id="20">X</td>
-        <td id="21">X</td>
-        <td id="22">X</td>
-        <td id="23">X</td>
-        <td id="24">X</td>
-        <td id="25">X</td>
-        <td id="26">X</td> 
-      </tr>
-      <tr>
-        <td id="30">X</td>
-        <td id="31">X</td>
-        <td id="32">X</td>
-        <td id="33">X</td>
-        <td id="34">X</td>
-        <td id="35">X</td>
-        <td id="36">X</td> 
-      </tr>
-      <tr>
-        <td id="40">X</td>
-        <td id="41">X</td>
-        <td id="42">X</td>
-        <td id="43">X</td>
-        <td id="44">X</td>
-        <td id="45">X</td>
-        <td id="46">X</td> 
-      </tr>
-      <tr>
-        <td id="50">X</td>
-        <td id="51">X</td>
-        <td id="52">X</td>
-        <td id="53">X</td>
-        <td id="54">X</td>
-        <td id="55">X</td>
-        <td id="56">X</td> 
-      </tr>
-      <tr>
-        <td id="60">X</td>
-        <td id="61">X</td>
-        <td id="62">X</td>
-        <td id="63">X</td>
-        <td id="64">X</td>
-        <td id="65">X</td>
-        <td id="66">X</td> 
-      </tr>
-    </table>
-    <button id="refresh">Refresh</button>
-
-</div>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script type="text/javascript" src="js/ship.js"></script>
-
-
+    </div>
 
 </body>
 </html>
